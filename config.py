@@ -1,3 +1,24 @@
+import queue
+
+global TIME_UNIT
+TIME_UNIT = 1
+
+global ORDER_Q
+ORDER_Q = queue.Queue()
+ORDER_Q.join()
+
+global ORDERS
+ORDERS = []
+
+global ORDER_SERVED
+ORDER_SERVED = 'ORDER_SERVED'
+
+global ORDER_STARS
+ORDER_STARS = []
+
+global SERVED_ORDERS
+SERVED_ORDERS = []
+
 global MENU 
 MENU = [{
     "id": 1,
@@ -61,29 +82,52 @@ MENU = [{
     "cooking-apparatus": None
 }]
 
+global TABLE_STAT_0
+global TABLE_STATE_1
+global TABLE_STATE_2
+TABLE_STATE_0 = 'being free'
+TABLE_STATE_1 = 'waiting to make a order'
+TABLE_STATE_2 = 'waiting for the order to be served'
+
 global TABLES
 TABLES = [{
     "id": 1,
-    "state": 'TABLE_FREE',
+    "state": 'TABLE_STATE_0',
     "order_id": None
 }, {
     "id": 2,
-    "state": 'TABLE_FREE',
+    "state": 'TABLE_STATE_0',
     "order_id": None
 }, {
     "id": 3,
-    "state": 'TABLE_FREE',
+    "state": 'TABLE_STATE_0',
     "order_id": None
 }, {
     "id": 4,
-    "state": 'TABLE_FREE',
+    "state": 'TABLE_STATE_0',
     "order_id": None
 }, {
     "id": 5,
-    "state": 'TABLE_FREE',
+    "state": 'TABLE_STATE_0',
     "order_id": None
 }
 ]
 
-global ORDERS
-ORDERS = []
+global WAITERS
+WAITERS = [{
+    'id' : 1,
+    'name' : 'Jamie'
+    },
+    {
+    'id' : 2,
+    'name' : 'Oliver'
+    },
+    {
+    'id' : 3,
+    'name' : 'Gordon'
+    },
+    {
+    'id' : 4,
+    'name' : 'Jasmin'
+    },
+]

@@ -10,11 +10,8 @@ ORDER_Q.join()
 global ORDERS
 ORDERS = []
 
-global ORDER_SERVED
-ORDER_SERVED = 'ORDER_SERVED'
-
-global ORDER_STARS
-ORDER_STARS = []
+global ORDER_RATING
+ORDER_RATING = []
 
 global SERVED_ORDERS
 SERVED_ORDERS = []
@@ -85,30 +82,32 @@ MENU = [{
 global TABLE_STAT_0
 global TABLE_STATE_1
 global TABLE_STATE_2
+global TABLE_STATE_3
 TABLE_STATE_0 = 'being free'
 TABLE_STATE_1 = 'waiting to make a order'
 TABLE_STATE_2 = 'waiting for the order to be served'
+TABLE_STATE_3 = 'waiting to be free'
 
 global TABLES
 TABLES = [{
     "id": 1,
-    "state": 'TABLE_STATE_0',
+    "state": TABLE_STATE_0,
     "order_id": None
 }, {
     "id": 2,
-    "state": 'TABLE_STATE_0',
+    "state": TABLE_STATE_0,
     "order_id": None
 }, {
     "id": 3,
-    "state": 'TABLE_STATE_0',
+    "state": TABLE_STATE_0,
     "order_id": None
 }, {
     "id": 4,
-    "state": 'TABLE_STATE_0',
+    "state": TABLE_STATE_0,
     "order_id": None
 }, {
     "id": 5,
-    "state": 'TABLE_STATE_0',
+    "state": TABLE_STATE_0,
     "order_id": None
 }
 ]

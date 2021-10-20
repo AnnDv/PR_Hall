@@ -8,4 +8,4 @@ RUN pip install requests flask
 
 EXPOSE 8000
 
-CMD ["python", "./dinning_hall.py"]
+CMD ["python", "-u", "dinning_hall.py"]

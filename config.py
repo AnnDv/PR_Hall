@@ -84,7 +84,7 @@ global TABLE_STATE_1
 global TABLE_STATE_2
 global TABLE_STATE_3
 TABLE_STATE_0 = 'being free'
-TABLE_STATE_1 = 'waiting to make a order'
+TABLE_STATE_1 = 'waiting to make an order'
 TABLE_STATE_2 = 'waiting for the order to be served'
 TABLE_STATE_3 = 'waiting to be free'
 
@@ -110,6 +110,31 @@ TABLES = [{
     "state": TABLE_STATE_0,
     "order_id": None
 }
+# {
+#     "id": 6,
+#     "state": TABLE_STATE_0,
+#     "order_id": None
+# },
+# {
+#     "id": 7,
+#     "state": TABLE_STATE_0,
+#     "order_id": None
+# },
+# {
+#     "id": 8,
+#     "state": TABLE_STATE_0,
+#     "order_id": None
+# },
+# {
+#     "id": 9,
+#     "state": TABLE_STATE_0,
+#     "order_id": None
+# },
+# {
+#     "id": 10,
+#     "state": TABLE_STATE_0,
+#     "order_id": None
+# }
 ]
 
 global WAITERS
